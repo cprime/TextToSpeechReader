@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5AA00309748E046CB0666D05 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2E28FFD411F446772398C8 /* libPods.a */; };
+		169A20FC0A00500F8DB03CC9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE22A873EE5934D8B52FA72C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E60F6C5B1B3D936F00BD64B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F6C5A1B3D936F00BD64B4 /* AppDelegate.swift */; };
 		E60F6C5D1B3D936F00BD64B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F6C5C1B3D936F00BD64B4 /* ViewController.swift */; };
 		E60F6C601B3D936F00BD64B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60F6C5E1B3D936F00BD64B4 /* Main.storyboard */; };
 		E60F6C621B3D936F00BD64B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60F6C611B3D936F00BD64B4 /* Images.xcassets */; };
 		E60F6C651B3D936F00BD64B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60F6C631B3D936F00BD64B4 /* LaunchScreen.xib */; };
-		E60F6C711B3D936F00BD64B4 /* TextToSpeechReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F6C701B3D936F00BD64B4 /* TextToSpeechReaderTests.swift */; };
+		E693DE371B3DCC2000AF11E6 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE361B3DCC2000AF11E6 /* SpeechViewController.swift */; };
+		E693DE3A1B3DE8C300AF11E6 /* HTMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE391B3DE8C300AF11E6 /* HTMLTokenizer.swift */; };
+		E693DE3C1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE3B1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,6 @@
 /* Begin PBXFileReference section */
 		09D53D8F41E4A191BD189B0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0C862FAF948BA5803F5E5787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		DD2E28FFD411F446772398C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60F6C551B3D936F00BD64B4 /* TextToSpeechReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextToSpeechReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60F6C591B3D936F00BD64B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E60F6C5A1B3D936F00BD64B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,12 @@
 		E60F6C641B3D936F00BD64B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E60F6C6A1B3D936F00BD64B4 /* TextToSpeechReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextToSpeechReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60F6C6F1B3D936F00BD64B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E60F6C701B3D936F00BD64B4 /* TextToSpeechReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechReaderTests.swift; sourceTree = "<group>"; };
+		E60F6C7A1B3D9D4F00BD64B4 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		E60F6C7C1B3DBA1900BD64B4 /* HTMLParsing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HTMLParsing.playground; sourceTree = "<group>"; };
+		E693DE361B3DCC2000AF11E6 /* SpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		E693DE391B3DE8C300AF11E6 /* HTMLTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTokenizer.swift; sourceTree = "<group>"; };
+		E693DE3B1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTokenizerTests.swift; sourceTree = "<group>"; };
+		EE22A873EE5934D8B52FA72C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AA00309748E046CB0666D05 /* libPods.a in Frameworks */,
+				169A20FC0A00500F8DB03CC9 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +70,7 @@
 		6025EAF57D313B9D6FFC2008 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E28FFD411F446772398C8 /* libPods.a */,
+				EE22A873EE5934D8B52FA72C /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,11 +107,15 @@
 		E60F6C571B3D936F00BD64B4 /* TextToSpeechReader */ = {
 			isa = PBXGroup;
 			children = (
+				E60F6C7B1B3DB99400BD64B4 /* Playgrounds */,
 				E60F6C5A1B3D936F00BD64B4 /* AppDelegate.swift */,
 				E60F6C5C1B3D936F00BD64B4 /* ViewController.swift */,
+				E693DE361B3DCC2000AF11E6 /* SpeechViewController.swift */,
+				E693DE381B3DE75600AF11E6 /* Processing */,
 				E60F6C5E1B3D936F00BD64B4 /* Main.storyboard */,
 				E60F6C611B3D936F00BD64B4 /* Images.xcassets */,
 				E60F6C631B3D936F00BD64B4 /* LaunchScreen.xib */,
+				E60F6C7A1B3D9D4F00BD64B4 /* Bridging.h */,
 				E60F6C581B3D936F00BD64B4 /* Supporting Files */,
 			);
 			path = TextToSpeechReader;
@@ -122,7 +132,7 @@
 		E60F6C6D1B3D936F00BD64B4 /* TextToSpeechReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				E60F6C701B3D936F00BD64B4 /* TextToSpeechReaderTests.swift */,
+				E693DE3B1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift */,
 				E60F6C6E1B3D936F00BD64B4 /* Supporting Files */,
 			);
 			path = TextToSpeechReaderTests;
@@ -134,6 +144,22 @@
 				E60F6C6F1B3D936F00BD64B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E60F6C7B1B3DB99400BD64B4 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				E60F6C7C1B3DBA1900BD64B4 /* HTMLParsing.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		E693DE381B3DE75600AF11E6 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				E693DE391B3DE8C300AF11E6 /* HTMLTokenizer.swift */,
+			);
+			path = Processing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +174,7 @@
 				E60F6C521B3D936F00BD64B4 /* Frameworks */,
 				E60F6C531B3D936F00BD64B4 /* Resources */,
 				8DC039D640E37F573A552999 /* Copy Pods Resources */,
+				9B09CB84ECCA664CBB6C6AD4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +214,11 @@
 				TargetAttributes = {
 					E60F6C541B3D936F00BD64B4 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					E60F6C691B3D936F00BD64B4 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -264,6 +296,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9B09CB84ECCA664CBB6C6AD4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60F6C5D1B3D936F00BD64B4 /* ViewController.swift in Sources */,
+				E693DE371B3DCC2000AF11E6 /* SpeechViewController.swift in Sources */,
+				E693DE3A1B3DE8C300AF11E6 /* HTMLTokenizer.swift in Sources */,
 				E60F6C5B1B3D936F00BD64B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60F6C711B3D936F00BD64B4 /* TextToSpeechReaderTests.swift in Sources */,
+				E693DE3C1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +452,7 @@
 				INFOPLIST_FILE = TextToSpeechReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TextToSpeechReader/Bridging.h;
 			};
 			name = Debug;
 		};
@@ -414,6 +464,7 @@
 				INFOPLIST_FILE = TextToSpeechReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TextToSpeechReader/Bridging.h;
 			};
 			name = Release;
 		};
