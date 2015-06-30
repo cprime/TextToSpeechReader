@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		169A20FC0A00500F8DB03CC9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE22A873EE5934D8B52FA72C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E60F6C5B1B3D936F00BD64B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F6C5A1B3D936F00BD64B4 /* AppDelegate.swift */; };
-		E60F6C5D1B3D936F00BD64B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F6C5C1B3D936F00BD64B4 /* ViewController.swift */; };
 		E60F6C601B3D936F00BD64B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60F6C5E1B3D936F00BD64B4 /* Main.storyboard */; };
 		E60F6C621B3D936F00BD64B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60F6C611B3D936F00BD64B4 /* Images.xcassets */; };
 		E60F6C651B3D936F00BD64B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60F6C631B3D936F00BD64B4 /* LaunchScreen.xib */; };
-		E693DE371B3DCC2000AF11E6 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE361B3DCC2000AF11E6 /* SpeechViewController.swift */; };
-		E693DE3A1B3DE8C300AF11E6 /* HTMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE391B3DE8C300AF11E6 /* HTMLTokenizer.swift */; };
 		E693DE3C1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE3B1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift */; };
+		E693DE4C1B41F1AA00AF11E6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE441B41F1AA00AF11E6 /* Article.swift */; };
+		E693DE4D1B41F1AA00AF11E6 /* HTMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE481B41F1AA00AF11E6 /* HTMLTokenizer.swift */; };
+		E693DE4E1B41F1AA00AF11E6 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE4A1B41F1AA00AF11E6 /* SpeechViewController.swift */; };
+		E693DE4F1B41F1AA00AF11E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE4B1B41F1AA00AF11E6 /* ViewController.swift */; };
+		E693DE521B41F1CF00AF11E6 /* IPBackgroundAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E693DE511B41F1CF00AF11E6 /* IPBackgroundAudioManager.m */; };
+		E693DE541B41F41C00AF11E6 /* ArticleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693DE531B41F41C00AF11E6 /* ArticleReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,17 +37,21 @@
 		E60F6C551B3D936F00BD64B4 /* TextToSpeechReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextToSpeechReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60F6C591B3D936F00BD64B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E60F6C5A1B3D936F00BD64B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E60F6C5C1B3D936F00BD64B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E60F6C5F1B3D936F00BD64B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E60F6C611B3D936F00BD64B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E60F6C641B3D936F00BD64B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E60F6C6A1B3D936F00BD64B4 /* TextToSpeechReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextToSpeechReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60F6C6F1B3D936F00BD64B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E60F6C7A1B3D9D4F00BD64B4 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
-		E60F6C7C1B3DBA1900BD64B4 /* HTMLParsing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HTMLParsing.playground; sourceTree = "<group>"; };
-		E693DE361B3DCC2000AF11E6 /* SpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
-		E693DE391B3DE8C300AF11E6 /* HTMLTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTokenizer.swift; sourceTree = "<group>"; };
 		E693DE3B1B3DE9A000AF11E6 /* HTMLTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTokenizerTests.swift; sourceTree = "<group>"; };
+		E693DE441B41F1AA00AF11E6 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E693DE461B41F1AA00AF11E6 /* HTMLParsing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HTMLParsing.playground; sourceTree = "<group>"; };
+		E693DE481B41F1AA00AF11E6 /* HTMLTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLTokenizer.swift; sourceTree = "<group>"; };
+		E693DE4A1B41F1AA00AF11E6 /* SpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		E693DE4B1B41F1AA00AF11E6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E693DE501B41F1CF00AF11E6 /* IPBackgroundAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPBackgroundAudioManager.h; sourceTree = "<group>"; };
+		E693DE511B41F1CF00AF11E6 /* IPBackgroundAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPBackgroundAudioManager.m; sourceTree = "<group>"; };
+		E693DE531B41F41C00AF11E6 /* ArticleReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleReader.swift; sourceTree = "<group>"; };
 		EE22A873EE5934D8B52FA72C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,11 +114,12 @@
 		E60F6C571B3D936F00BD64B4 /* TextToSpeechReader */ = {
 			isa = PBXGroup;
 			children = (
-				E60F6C7B1B3DB99400BD64B4 /* Playgrounds */,
+				E693DE421B41F1AA00AF11E6 /* 3rdParty */,
+				E693DE431B41F1AA00AF11E6 /* Models */,
+				E693DE451B41F1AA00AF11E6 /* Playgrounds */,
+				E693DE471B41F1AA00AF11E6 /* Processing */,
+				E693DE491B41F1AA00AF11E6 /* ViewControllers */,
 				E60F6C5A1B3D936F00BD64B4 /* AppDelegate.swift */,
-				E60F6C5C1B3D936F00BD64B4 /* ViewController.swift */,
-				E693DE361B3DCC2000AF11E6 /* SpeechViewController.swift */,
-				E693DE381B3DE75600AF11E6 /* Processing */,
 				E60F6C5E1B3D936F00BD64B4 /* Main.storyboard */,
 				E60F6C611B3D936F00BD64B4 /* Images.xcassets */,
 				E60F6C631B3D936F00BD64B4 /* LaunchScreen.xib */,
@@ -146,20 +154,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E60F6C7B1B3DB99400BD64B4 /* Playgrounds */ = {
+		E693DE421B41F1AA00AF11E6 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
-				E60F6C7C1B3DBA1900BD64B4 /* HTMLParsing.playground */,
+				E693DE501B41F1CF00AF11E6 /* IPBackgroundAudioManager.h */,
+				E693DE511B41F1CF00AF11E6 /* IPBackgroundAudioManager.m */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		E693DE431B41F1AA00AF11E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E693DE441B41F1AA00AF11E6 /* Article.swift */,
+				E693DE531B41F41C00AF11E6 /* ArticleReader.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E693DE451B41F1AA00AF11E6 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				E693DE461B41F1AA00AF11E6 /* HTMLParsing.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
 		};
-		E693DE381B3DE75600AF11E6 /* Processing */ = {
+		E693DE471B41F1AA00AF11E6 /* Processing */ = {
 			isa = PBXGroup;
 			children = (
-				E693DE391B3DE8C300AF11E6 /* HTMLTokenizer.swift */,
+				E693DE481B41F1AA00AF11E6 /* HTMLTokenizer.swift */,
 			);
 			path = Processing;
+			sourceTree = "<group>";
+		};
+		E693DE491B41F1AA00AF11E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E693DE4A1B41F1AA00AF11E6 /* SpeechViewController.swift */,
+				E693DE4B1B41F1AA00AF11E6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,10 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60F6C5D1B3D936F00BD64B4 /* ViewController.swift in Sources */,
-				E693DE371B3DCC2000AF11E6 /* SpeechViewController.swift in Sources */,
-				E693DE3A1B3DE8C300AF11E6 /* HTMLTokenizer.swift in Sources */,
+				E693DE4F1B41F1AA00AF11E6 /* ViewController.swift in Sources */,
+				E693DE4E1B41F1AA00AF11E6 /* SpeechViewController.swift in Sources */,
+				E693DE4C1B41F1AA00AF11E6 /* Article.swift in Sources */,
+				E693DE521B41F1CF00AF11E6 /* IPBackgroundAudioManager.m in Sources */,
 				E60F6C5B1B3D936F00BD64B4 /* AppDelegate.swift in Sources */,
+				E693DE4D1B41F1AA00AF11E6 /* HTMLTokenizer.swift in Sources */,
+				E693DE541B41F41C00AF11E6 /* ArticleReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

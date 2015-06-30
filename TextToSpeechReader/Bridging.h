@@ -11,4 +11,6 @@
 
 #import <SVProgressHUD/SVProgressHUD.h>
 
+#import "IPBackgroundAudioManager.h"
+
 #endif
