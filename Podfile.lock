@@ -1,13 +1,16 @@
 PODS:
   - Alamofire (1.2.3)
+  - MFSideMenu (0.5.5)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
   - Alamofire
+  - MFSideMenu
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  MFSideMenu: 268122e6894f2747fc3a2b48578100b232506c60
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.37.2

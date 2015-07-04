@@ -10,7 +10,7 @@
 #define TextToSpeechReader_Bridging_h
 
 #import <SVProgressHUD/SVProgressHUD.h>
-
+#import <MFSideMenu/MFSideMenu.h>
 #import "IPBackgroundAudioManager.h"
 
 #endif
