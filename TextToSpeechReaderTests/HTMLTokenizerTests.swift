@@ -10,26 +10,32 @@ import UIKit
 import XCTest
 
 class HTMLTokenizerTests: XCTestCase {
-    
+    var tokenizer: HTMLTokenizer?
+
     override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.tokenizer = HTMLTokenizer(readers:
+            TextTokenReader(),
+            ImageTokenReader(),
+            HeaderTokenReader()
+        )
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    func testSomething() {
+        let makingPath = NSBundle(forClass: self.dynamicType).pathForResource("making-educational-games", ofType: "json")!
+        let makingData = NSData(contentsOfFile: makingPath)!
+        let makingJSON = NSJSONSerialization.JSONObjectWithData(makingData, options: nil, error: nil) as! [String: AnyObject]
+        var makingHTML = makingJSON["content"] as! String
 
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+        if let tokens = self.tokenizer?.tokenizeHTML(makingHTML) {
+            for token in tokens {
+                switch token {
+                case let .Text(text):
+                    println(text)
+                case let .Image(URL):
+                    println(URL.absoluteString)
+                }
+                println()
+            }
         }
     }
 }
